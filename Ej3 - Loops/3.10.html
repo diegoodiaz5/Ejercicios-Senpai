@@ -1,0 +1,23 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      let numero = parseInt(prompt("Ingrese un número"));
+      while (numero < 2) {
+        numero = parseInt(prompt("Ingrese un número mayor a 2"));
+      }
+
+      let i = numero - 1;
+      let aux = true;
+      while (i >= 1 && aux) {
+        if (i === 1) {
+          console.log("Es primo!");
+        } else if (numero % i === 0) {
+          console.log("No es primo");
+          aux = false;
+        }
+        i--;
+      }
+    </script>
+  </body>
+</html>
