@@ -3,24 +3,18 @@
   <body>
     <script>
       let numero = parseInt(prompt("Ingrese un numero"));
-      let numPrimos = [];
       for (let i = 1; i <= numero; i++) {
         let j = 1;
         let aux = true;
         while (j <= i && aux) {
           if (i === j) {
-            numPrimos.push(j);
+            console.log(j);
           }
-
-          if (i % j === 0 && i > 1) {
+          if (i % j === 0 && j > 1) {
             aux = false;
           }
           j++;
         }
-      }
-      for (let i = 0; i < numPrimos.length; i++) {
-        console.log(numPrimos.length);
-        console.log(numPrimos[i]);
       }
     </script>
   </body>
